@@ -23,13 +23,28 @@ Entra: IDP for MSFT clouds such as azure, o365 and dynamics 365. Also it is not 
 - Devices can live inside of AzureAD. 
     - registered can be used for stuff like byob or their personally. Can be used for mac os, ubuntu 20.XX+ , android and more
     - joined is for corporate owned devices. Only works with Windows 10+ and Server 19+ in Azure
-- Cloud and federated authentication 
-
+- Password Hash sync: The ability to sync between Azure/EntraAD and an on Prem ad to grant acess by checking the hash of the user's password hash.
+- Passthrough authentication :AzureAD/Entra sends request to a service bus , which is then sent down to an on prem AD for authentication and the results are sent back through to let Azure send the results to the user
+- Cloud and federated authentication : Goes through a federation servie which is then checked by AD. Benefits related to locked accounts. Not recommended because after initial auth it isn't used because just the token is used which can be hijacked , etc 
+- Azure has the ability to check darkweb passwords against hash of the hash. 
 
 ### For Hybrid enviornments
 - AD is always the source of truth. Sync is one way except for some limited services like password write back
 - An Azure AD instance can only sync from on AzureAD connect
 - One AD can sync to multiple Azure tenants/instances 
+
+## Roles and Administrative Units
+- Roles: A set of permissions that can be applied to users. The only groups that can recieve roles are security groups 
+- Administrative Units - Don't inherit memembers of the groups in these units. Users must be explicilty added to the administrative units. Can use dynamic membership or static to add users or groups to a admin unit. Need a P1 license to manage an AU. 
+Always use least privilege
+
+## Privileged Identity Management (PIM)
+- Enables elevation of EntraAD roles when needed
+- Can also be used to eleavte to a priviledge group for limited time
+- Roles must be pre-assigned to available users
+- Just in time solution
+- Can be permanent or also temporarily 
+
 
 
 
@@ -40,4 +55,4 @@ Federate - allows you to trust tokens from other services
 ## Just-in-time Permissions
 
 ### Resources
-[Module 2 - Identity](https://youtu.be/6Vm-h_3nKjc?si=0JNBGnE1cxoYmtlZ&t=3028)
+[Module 2 - Identity](https://youtu.be/6Vm-h_3nKjc?si=rqULd2r7ZJyPLKz7&t=5105)
