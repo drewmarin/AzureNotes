@@ -58,9 +58,28 @@ Context matching - can pass on relevant information such as application name, lo
 
 Federate - allows you to trust tokens from other services 
 
+## Differences between AD & AzureAD
+AD introduced in 2000
+
+Federation glues an on prem to Azure AD to allow for seamless management. Uses SAML tokens . Allows you to use a single identity for both on prem and azure access provisioning
+
+Pain Points
+- Rotate tokens
+- Must maintain federation infrastructure which is publically facing. 
+
+AzureAD - Cloud based identity provided. There is no "Domain Controllers" for an Azure AD domain
+- SCIM: provides it for cross domain authentication
+- SAML
+- NO KEREBEROS
+- NO NTLM
+- NO LDAP
+-
+
+
 ## Conditional Access and MFA
 
 ## Just-in-time Permissions
 
 ### Resources
-[Module 2 - Identity](https://youtu.be/6Vm-h_3nKjc?si=rqULd2r7ZJyPLKz7)
+- [Module 2 - Identity](https://youtu.be/6Vm-h_3nKjc?si=rqULd2r7ZJyPLKz7)
+- [The Line Between AD and Azure AD](https://youtu.be/uts0oy8NlUs?si=l0R4lmFeCTrtDXe5&t=1087)
