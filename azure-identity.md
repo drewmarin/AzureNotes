@@ -45,6 +45,14 @@ Always use least privilege
 - Just in time solution
 - Can be permanent or also temporarily 
 
+Access Reviews - review group memeberships and permission to ensure the user has just the access they need
+
+Mfa - stops alot of lazy attacks 
+MFA fatigue - users will eventually click to grant access if prompted to much. a P1 license is needed to implement mfa or use Security Defaults (or be GLobal Admin)
+
+Typically access tokens have a TTL and must be refreshed
+
+Context matching - can pass on relevant information such as application name, location, and more
 
 
 
@@ -55,4 +63,4 @@ Federate - allows you to trust tokens from other services
 ## Just-in-time Permissions
 
 ### Resources
-[Module 2 - Identity](https://youtu.be/6Vm-h_3nKjc?si=rqULd2r7ZJyPLKz7&t=5105)
+[Module 2 - Identity](https://youtu.be/6Vm-h_3nKjc?si=rqULd2r7ZJyPLKz7)
