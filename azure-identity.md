@@ -73,8 +73,14 @@ AzureAD - Cloud based identity provided. There is no "Domain Controllers" for an
 - NO KEREBEROS
 - NO NTLM
 - NO LDAP
--
+- Built in Federations built into platform, can also add custom federations
 
+Conditional Access - allows you to set guidelines across useage
+- Terms of use policies
+- Policies, can apply to groups ,certains users, etc
+    - Can target particular apps
+    - Can integrate with azure ad 
+    - Can be tuned by user risk level with appropriate licensing
 
 ## Conditional Access and MFA
 
@@ -82,4 +88,4 @@ AzureAD - Cloud based identity provided. There is no "Domain Controllers" for an
 
 ### Resources
 - [Module 2 - Identity](https://youtu.be/6Vm-h_3nKjc?si=rqULd2r7ZJyPLKz7)
-- [The Line Between AD and Azure AD](https://youtu.be/uts0oy8NlUs?si=l0R4lmFeCTrtDXe5&t=1087)
+- [The Line Between AD and Azure AD](https://youtu.be/uts0oy8NlUs?si=ilTZSZSyaABRj-nE&t=1715)
