@@ -85,6 +85,8 @@ Conditional Access - allows you to set guidelines across useage
     - first 50k memebers free
     - anything after is a fractional fee based on entra license p1 or p2
     - need to enable self service sign up , this will add a new app registration called aad extensions app 
+    - Adds external identities such as facebook
+    - when user signs up some custom user attributes come over
 
 ## Conditional Access and MFA
 
