@@ -81,6 +81,10 @@ Conditional Access - allows you to set guidelines across useage
     - Can target particular apps
     - Can integrate with azure ad 
     - Can be tuned by user risk level with appropriate licensing
+## External Identities
+    - first 50k memebers free
+    - anything after is a fractional fee based on entra license p1 or p2
+    - need to enable self service sign up , this will add a new app registration called aad extensions app 
 
 ## Conditional Access and MFA
 
