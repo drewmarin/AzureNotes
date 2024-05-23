@@ -14,8 +14,10 @@ Authorization (AuthZ) - What I can access
 ## AD and Azure AD
 
 ### Entra/Azure AD
-Entra: IDP for MSFT clouds such as azure, o365 and dynamics 365. Also it is not just AD in the cloud. supports oauth, saml, https 
+Entra: IDP for MSFT clouds such as azure, o365 and dynamics 365. Also it is not just AD in the cloud. supports oauth, saml, https. It is not just an Azure or O365 product it's for the whole msft ecosystem
 
+- Flexible OS support
+- SSO platform 
 - identity - object that can be authentified 
 - users 
 - groups
